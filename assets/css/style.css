@@ -87,7 +87,6 @@ a{
   text-align: center;
 }
 .title_seperator{
-  margin-top: 10px;
   padding-top: 25px;
 }
 .frontpage{
@@ -111,7 +110,6 @@ h2{
 .about{
   background: #000;
   color: white;
-  margin-top: 10px;
   padding-bottom: 50px;
 }
 .about{
@@ -134,11 +132,15 @@ h2{
 .extemd-c-m{
   height: 400px;
 }
+.extemd-c-m-l{
+  height: 500px;
+}
 .card-manager h1{
   color: #212F45;
   font-size: 22px;
   margin-left: 10%;
   padding-top: 20px;
+  margin-bottom: 0;
 }
 .card-manager ul li{
   color: black;
@@ -148,6 +150,11 @@ h2{
   padding-left: 0;
   margin-left: 10%;
 }
+.card-manager p{
+  margin-left: 5%;
+  margin-top: 0;
+  color: grey;
+}
 .skills-image{
   height: 200px;
   width: auto;
@@ -155,6 +162,18 @@ h2{
 }
 .skills-gif-text{
   display: flex;
+}
+
+.image-projects{
+  margin-left: 10%;
+  height: 250px;
+}
+.card-manager.extemd-c-m-l button{
+  margin-left: 40%;
+}
+.card-manager.extemd-c-m-l img{
+  margin-left: 10%;
+  height: 250px;
 }
 
 
