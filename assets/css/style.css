@@ -1,37 +1,35 @@
 body{
     margin: 0;
 }
-  .name{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #000;
-  }
-  .frontpage-name a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 8px;
-    margin-left: 5%;
-  }
-  
-  .frontpage-name {
-    font-weight: 700;
-    text-align: center;
-    font-size: 20px;
-    font-family: Hack, sans-serif;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #000, #fff, #000);
-    letter-spacing: 5px;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: shine 10s linear infinite;
-    position: relative;
-  }
-  
+.name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+.frontpage-name a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 8px;
+  margin-left: 5%;
+}
+.frontpage-name {
+  font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 10s linear infinite;
+  position: relative;
+}
   @keyframes shine {
     0% {
       background-position-x: -500%;
@@ -41,46 +39,144 @@ body{
     }
   }
 #hamburger{
-    width: auto;
-    height: 40px;
-    position: absolute;
-    z-index: 3;
-    top: 0;
+  width: auto;
+  height: 40px;
+  position: absolute;
+  z-index: 3;
+  top: 0;
  }
-  nav{
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-  }
-  nav ul{
-    font-family: 'PT Serif', serif;
-    margin-top: 0;
-    list-style: none;
-    padding-top: 15%;
-    padding-left: 0;
-  }
-  nav ul li{
-    padding-left: 20%;
-    line-height: 100px;
-    background: rgba(0, 0, 0, 0.452);
-    border: 1px solid white;
-  }
-  nav ul li a{
-    margin-left: 0;
-    padding: 15px 20px;
-    font-family: Hack, sans-serif;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
+nav{
+  background: rgba(0, 0, 0, 0.452);
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
 }
-  nav ul li a:hover{
-    color: white;
+nav ul{
+  font-family: 'PT Serif', serif;
+  margin-top: 0;
+  list-style: none;
+  padding-top: 15%;
+  padding-left: 0;
+}
+nav ul li{
+  padding-left: 20%;
+  line-height: 100px;
+  background: rgba(0, 0, 0, 0.452);
+  border: 1px solid white;
+}
+nav ul li a{
+  margin-left: 0;
+  padding: 15px 20px;
+  font-family: Hack, sans-serif;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: white;
+}
+.nav-image{
+  background: rgba(0, 0, 0, 0.473);
+}
+a{
+  font-size: 12px;
+}
+.text_center{
+  text-align: center;
+}
+.title_seperator{
+  margin-top: 10px;
+  padding-top: 25px;
+}
+.frontpage{
+  font-family: 'Patua One', cursive;
+  background: #000;
+  color: white;
+}
+.frontpage p{
+  padding-top: 20px;
+  font-size: 15px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.frontpage img{
+  padding-bottom: 250px;
+}
+h2{
+  color: white;
+  background: linear-gradient(90deg, #000, rgb(151, 136, 136), #000);
+}
+.about{
+  background: #000;
+  color: white;
+  margin-top: 10px;
+  padding-bottom: 50px;
+}
+.about{
+  font-family: 'Patua One', cursive;
+}
+.me-image{
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-left: 25%;
+}
+.card-manager{
+  margin-top: 50px;
+  background: white;
+  width: 80%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.extemd-c-m{
+  height: 400px;
+}
+.card-manager h1{
+  color: #212F45;
+  font-size: 22px;
+  margin-left: 10%;
+  padding-top: 20px;
+}
+.card-manager ul li{
+  color: black;
+  list-style-type: square;
+}
+.card-manager ul{
+  padding-left: 0;
+  margin-left: 10%;
+}
+.skills-image{
+  height: 200px;
+  width: auto;
+  padding-left: 20%;
+}
+.skills-gif-text{
+  display: flex;
+}
+
+
+
+
+
+  @media (min-width: 1920px) and (max-width: 2560px)  {
+    #hamburger{
+      width: auto;
+      height: 100px;
+    }
+    .frontpage-name{
+      font-size: 100px;
+    }
+    .frontpage-name a{
+      font-size: 40px;
+    }
+    .image-text{
+      display: block;
+    }
+    .image-text img{
+        height: 400px ;
+        margin-left: 43%;
+    }
   }
-  .nav-image{
-    background: rgba(0, 0, 0, 0.473);
-  }
-  a{
-    font-size: 12px;
-  
