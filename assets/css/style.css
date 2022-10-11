@@ -38,16 +38,22 @@ body{
       background-position-x: 500%;
     }
   }
+  .burger-background{
+    background: #212F45;
+    height: 50px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+  }
 #hamburger{
   width: auto;
   height: 40px;
-  position: absolute;
-  z-index: 3;
-  top: 0;
+  left: 5px;
+  top: 5px;
  }
 nav{
   background: rgba(0, 0, 0, 0.452);
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 0;
   width: 100%;
@@ -115,11 +121,13 @@ h2{
 .about{
   font-family: 'Patua One', cursive;
 }
-.me-image{
+.me-image img{
   width: 200px;
   height: auto;
   border-radius: 50%;
-  margin-left: 25%;
+}
+.me-image{
+  text-align: center;
 }
 .card-manager{
   margin-top: 50px;
@@ -163,28 +171,59 @@ h2{
 .skills-gif-text{
   display: flex;
 }
-
-.image-projects{
-  margin-left: 10%;
+.projects_image{
+  text-align: center;
   height: 250px;
-}
-.card-manager.extemd-c-m-l button{
-  margin-left: 40%;
 }
 .card-manager.extemd-c-m-l img{
-  margin-left: 10%;
   height: 250px;
 }
-
-
-
-
-
-  @media (min-width: 1920px) and (max-width: 2560px)  {
-    #hamburger{
-      width: auto;
-      height: 100px;
-    }
+.card-manager.extemd-c-m-l h1{
+  margin: 0;
+}
+.card-manager.extemd-c-m-l p{
+  margin: 0;
+}
+footer{
+  background: #212F45;
+  height: 350px;
+  padding-left: 5%;
+}
+footer h1{
+  color: white;
+  padding-top: 50px;
+  margin: 0;
+}
+footer svg{
+  color: white;
+}
+.socials-footer{
+  padding-top: 10px;
+  display: flex;
+  padding-bottom: 20px;
+}
+footer .socials-footer a{
+  margin-right: 5px;
+}
+footer p{
+  color:white;
+}
+footer ul{
+  padding: 0;
+  display: flex;
+}
+footer ul li a{
+  color: white;
+}
+footer ul li{
+  padding-right: 5px;
+  list-style: none;
+}
+.copyright{
+  position: relative;
+  bottom: 0;
+}
+  @media (min-width: 1280px){
     .frontpage-name{
       font-size: 100px;
     }
