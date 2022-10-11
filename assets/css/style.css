@@ -52,7 +52,7 @@ body{
   top: 5px;
  }
 nav{
-  background: rgba(0, 0, 0, 0.452);
+  background: rgba(0, 0, 0, 0.753);
   position: fixed;
   top: 0;
   z-index: 0;
@@ -84,7 +84,7 @@ nav ul li a:hover{
   color: white;
 }
 .nav-image{
-  background: rgba(0, 0, 0, 0.473);
+  background: rgba(0, 0, 0, 0.863);
 }
 a{
   font-size: 12px;
@@ -113,10 +113,12 @@ h2{
   color: white;
   background: linear-gradient(90deg, #000, rgb(151, 136, 136), #000);
 }
+.content-about{
+  padding-bottom: 20px;
+}
 .about{
   background: #000;
   color: white;
-  padding-bottom: 50px;
 }
 .about{
   font-family: 'Patua One', cursive;
@@ -184,6 +186,36 @@ h2{
 .card-manager.extemd-c-m-l p{
   margin: 0;
 }
+.input-card{
+  margin-top: 50px;
+  background: white;
+  width: 80%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact{
+  background:black;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.input-card h1{
+  color: #212F45;
+  font-size: 22px;
+  margin-left: 10%;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+form input{
+  margin-top: 20px;
+}
+form textarea{
+  margin-top: 20px;
+}
+form{
+  margin-left: 10%;
+}
 footer{
   background: #212F45;
   height: 350px;
@@ -236,5 +268,19 @@ footer ul li{
     .image-text img{
         height: 400px ;
         margin-left: 43%;
+    }
+    .input-card{
+      height: 500px;
+    }
+    form{
+      margin: 0;
+    }
+  }
+  @media (min-width: 844px) and (max-width: 1280px){
+    .input-card form{
+      height: 1200px;
+    }
+    .input-card {
+      height: 1200px;
     }
   }
